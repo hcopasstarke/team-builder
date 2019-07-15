@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from "react";
 
 export const EditMemberForm = (props) => {
     const [member, setMember] = useState(props.currentMember)
@@ -10,8 +10,11 @@ export const EditMemberForm = (props) => {
         [props]
     )
 
+    // [props] skips applying effect if values don't change between re-renders
+
     const handleInputChange = event => {
         const {name, value} = event.target
+        
         setMember({...member, [name]: value})
     }
     

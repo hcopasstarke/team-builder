@@ -21,10 +21,10 @@ In this project you'll build an app that will keep track of memebers of a team. 
 - [X] Clone your OWN version of the repository in your terminal
 - [X] CD into the project base directory `cd american-football-scoreboard`
 - [X] Download project dependencies by running one of these two commands `yarn` or `npm install`
-- [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
@@ -35,9 +35,9 @@ Follow these steps for completing your project.
 
 ## Minimum Viable Product
 
-- [ ] Render a list of team members from state
-- [ ] Build a form to add a new member to the list of members
-- [ ] Add the functionality to edit team members
+- [X] Render a list of team members from state
+- [X] Build a form to add a new member to the list of members
+- [X] Add the functionality to edit team members
 
 ### STEP 1 - Setup your state
 

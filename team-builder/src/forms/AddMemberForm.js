@@ -1,16 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState} from "react";
 
 export const AddMemberForm = (props) => {
     const initialFormState = { id: null, name: "", email: "" }
+
     const [ member, setMember ] = useState(initialFormState)
+
     const handleInputChange = event => {
         const {name, value} = event.target
         setMember({...member, [name]: value})
     }
+
     return (
         <form onSubmit={event => {
             event.preventDefault()
             if (!member.name || !member.email) return
+
             props.addMember(member)
             setMember(initialFormState)
         }}

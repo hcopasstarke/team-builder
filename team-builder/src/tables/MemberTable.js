@@ -2,14 +2,14 @@ import React from 'react'
 
 export const MemberTable = (props) => (
     <table>
-        <table-head>
+        <thead>
             <tr>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Actions</th>
             </tr>
-        </table-head>
-        <table-body>
+        </thead>
+        <tbody>
             {props.members.length > 0 ? (
                 props.members.map(member => (
                     <tr key={member.id}>
@@ -18,7 +18,7 @@ export const MemberTable = (props) => (
                         <td>
                             <button 
                                 onClick={() => {
-                                    props.editRow(member) 
+                                    props.editMember(member) 
                                 }}
                                 className='button muted-button'
                             >
@@ -38,6 +38,6 @@ export const MemberTable = (props) => (
                     <td colSpan={3}>No members</td>
                 </tr>
             )}
-        </table-body>
+        </tbody>
     </table>
 )

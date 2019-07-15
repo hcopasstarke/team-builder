@@ -1,8 +1,7 @@
 import React, {useState, Fragment} from 'react';
-import {MemberTable} from './tables/MemberTable';
 import {AddMemberForm} from './forms/AddMemberForm';
 import {EditMemberForm} from './forms/EditMemberForm';
-import './App.css';
+import {MemberTable} from './tables/MemberTable';
 
 
 const App = () => {
@@ -48,7 +47,7 @@ const App = () => {
     setMembers(members.map(member => (member.id === id ? updatedMember : member)))
   }
 
-  const editRow = member => {
+  const editMember = member => {
     setEditing(true)
     setCurrentMember({id: member.id, name: member.name, email: member.email})
   }
@@ -77,7 +76,7 @@ const App = () => {
         </div>
         <div className="flex-large">
           <h2>View Team Members</h2>
-          <MemberTable members={members} editRow={editRow} deleteMember={deleteMember} />
+          <MemberTable members={members} editMember={editMember} deleteMember={deleteMember} />
         </div>
       </div>
     </div>
