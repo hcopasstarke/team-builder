@@ -30,6 +30,7 @@ export const EditMemberForm = (props) => {
             <input type="text" name="name" value={member.name} onChange={handleInputChange} />
             <label>Email</label>
             <input type="text" name="email" value={member.email} onChange={handleInputChange} />
+            <button>Update Member</button>
             <button onClick={() => props.setEditing(false)} className="button muted-button">
                 Cancel
             </button>
